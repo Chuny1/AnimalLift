@@ -1,0 +1,64 @@
+{
+  "shared": {
+    "reference_mesh_path": "assets/reference.obj",
+    "vae_local_path": null,
+    "vae_local_files_only": false,
+    "device": "cuda"
+  },
+  "train": {
+    "base_root": "data/Animal_Textures",
+    "data_root": "data/Animal_Textures/dog/dataset",
+    "uv_mask_path": "assets/UV_Occupancy.png",
+    "flat_val_image_dir": "input_images",
+    "infer_input": "input_images",
+    "output_dir": "outputs/train",
+    "resume": null,
+    "all_animals": true,
+    "animals": [
+      "dog",
+      "small_cat",
+      "big_cat",
+      "wolf",
+      "fox",
+      "bear"
+    ],
+    "guidance_dirname": "augmented_images",
+    "texture_dirname": "textures",
+    "shape_dirname": "shapes",
+    "hair_dirname": "hair_maps_single_512_uvlocal",
+    "vae_model": "stabilityai/sd-vae-ft-mse"
+  },
+  "test": {
+    "resume": "ckpt/latest.pt",
+    "flat_val_image_dir": "input_images",
+    "output_dir": "outputs/test"
+  },
+  "blender": {
+    "results_dir": "outputs/test",
+    "sample": null,
+    "obj_path": null,
+    "save_blend_path": null,
+    "hdr_path": "assets/kloofendal_28d_misty_2k.hdr",
+    "use_hdri": false,
+    "underhair_mask_path": "assets/underhair_mask.png",
+    "uv_source_obj_path": "assets/uv_source.obj",
+    "hair_meta_path": "assets/hair_map_meta_uvanchor.npz",
+    "normal_path": "assets/Normal.png",
+    "roughness_path": "assets/Roughness.png",
+    "hair_nodes_path": null,
+    "density_dir": null,
+    "enable_texture_loading": true,
+    "pack_assets": true,
+    "save_blend": true
+  },
+  "dataset_generation": {
+    "base_dir": "outputs/dataset_generation/dog",
+    "input_texture_path": "assets/base_texture.png",
+    "model_id": "Qwen/Qwen-Image-Edit-2511",
+    "device": "cuda"
+  },
+  "downloads": {
+    "checkpoint_google_drive_url": "",
+    "assets_google_drive_url": ""
+  }
+}

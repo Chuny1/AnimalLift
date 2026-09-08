@@ -1,0 +1,21 @@
+# AnimalLift training and inference: Linux x86_64, Python 3.10.20.
+# Install in a fresh environment: python -m pip install -r requirements.txt
+# CUDA 12.4 wheels; additional package dependencies are resolved by pip.
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+# Model execution, image processing, and progress reporting.
+torch==2.4.0+cu124
+torchvision==0.19.0+cu124
+numpy==2.2.6
+Pillow==12.3.0
+tqdm==4.67.3
+timm==1.0.26
+diffusers==0.34.0
+
+# Pretrained model download, serialization, and memory-efficient VAE loading.
+huggingface-hub==1.27.0
+safetensors==0.8.0
+accelerate==1.14.0
+
+# Blender 4.2 supplies bpy, bmesh, mathutils, and its own NumPy.
+# Optional Qwen texture generation uses a separate environment; see README.md.
