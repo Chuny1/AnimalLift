@@ -9,7 +9,7 @@ Run inference in Python. Load the results in Blender. Save a portable `.blend` s
 [Hugging Face Model](https://huggingface.co/Chunyi99/AnimalLift/tree/main) · [Hugging Face Dataset](https://huggingface.co/datasets/Chunyi99/AnimalLift)
 
 <p>
-  <img src="teaser.pdf" alt="AnimalLift teaser: single-image reconstruction of an animal mesh, UV texture, and fur, with animation and reconstruction examples." width="100%">
+  <img src="teaser.png" alt="AnimalLift teaser: single-image reconstruction of an animal mesh, UV texture, and fur, with animation and reconstruction examples." width="100%">
 </p>
 
 [Quick Start](#quick-start) · [Downloads](#downloads) · [Environment](#tested-environment) · [Inference](#inference) · [Blender](#blender) · [Training](#training) · [Configuration](#configuration)
